@@ -2191,21 +2191,6 @@ background: #f00018;
 
     </div>
 
-<!--Redirect jika 404 Start -->
-<b:if cond='data:blog.pageType == &quot;index&quot;'>
-<title><data:blog.pageTitle/></title>
-<b:else/>
-<b:if cond='data:blog.pageType == &quot;error_page&quot;'>
-<script type='text/javascript'>
-BSPNF_redirect=setTimeout(function() {
-location.pathname= &quot;/&quot;
-}, 1);
-</script>
-<b:else/>
-<title><data:blog.pageName/></title>
-</b:if>
-</b:if>
-<!--Redirect jika 404 End -->
 </body>
 
 
